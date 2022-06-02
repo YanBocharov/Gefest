@@ -1,0 +1,44 @@
+.maps {
+    margin-top: 150px;
+    position: relative;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_mt20 {
+            margin-top: 20px;
+        }
+        &_mt60 {
+            margin-top: 60px;
+        }
+        &_mb80 {
+            margin-bottom: 80px;
+        }
+    }
+    &__img {
+        max-width: 550px;
+        max-height: 390px;
+    }
+    &__text {
+        max-width: 518px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: #213252;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        color: #213252;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #213252;
+        margin-top: 35px;
+    }
+}

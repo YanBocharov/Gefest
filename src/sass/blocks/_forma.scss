@@ -1,0 +1,21 @@
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+.input__file-button {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    background: #1bbc9b;
+    cursor: pointer;
+}

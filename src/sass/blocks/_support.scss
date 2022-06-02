@@ -1,0 +1,87 @@
+.support {
+    overflow: hidden;
+    margin-top: 50px;
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        color: #213252;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #213252;
+        margin-top: 25px;
+    }
+    &__wall {
+        position: relative;
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: 192px 182px;
+        column-gap: 40px;
+        align-items: center;
+        img {
+            max-width: 190px;
+            margin-bottom: 25px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #213252;
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #213252;
+        }
+    }
+    &__img {
+        display: flex;
+        top: 0;  
+        align-items: flex-end;
+        min-width: 712px;
+        max-height: 580px;
+        img {
+            position: absolute;
+            max-width: 720px;
+            max-height: 580px;
+            z-index: -1;
+        }
+        &-descr {
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            min-height: 90px;
+            background-color: #211D1D;
+            width: 100%;
+            text-align: left;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+    }
+    &__footer {
+        background: url('../../img/support/image 20.png') center center/cover no-repeat;
+        height: 265px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 180px;
+        div {
+            max-width: 830px;
+        }
+    }
+}

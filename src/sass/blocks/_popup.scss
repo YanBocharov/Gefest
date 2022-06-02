@@ -1,0 +1,173 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+    &__area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &__content {
+        position: relative;
+        min-width: 1230px;
+        min-height: 820px;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+    &__close {
+        right: 0;
+        top: 0;
+        position: absolute;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 18px;
+        color: #213252;
+        text-align: center;
+        margin-top: 55px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #213252;
+        margin-top: 20px;
+    }
+    &__img {
+        position: relative;
+        img {
+            position: absolute;
+            left: 65px;
+            top: -50px;
+            max-width: 605px;
+        }
+    }
+    &__block {
+        position: relative;
+        margin-top: 20px;
+    }
+    &__wall {
+        max-width: 325px;
+        z-index: 2300;
+        position: absolute;
+        right: 200px;
+        top: 50px;
+    }
+    &__descr {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: #213252;
+    }
+    &__form {
+        position: relative;
+    }
+    &__input {
+        position: relative;
+        label {
+            position: absolute;
+            left: 0;
+            top: 17px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #213252;
+        }
+        input {
+            margin-top: 45px;
+            width: 310px;
+            height: 60px;
+            background: #FFFFFF;
+            border: 1px solid #CDD6DB;
+            border-radius: 4px;
+            padding: 0 10px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #65677C;
+        }
+    }
+    &__add {
+        position: relative;
+        margin-top: 25px;
+        a {
+            display: flex;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #213252;
+            padding-left: 30px;
+            &::before {
+                content: '';
+                background: url('../../img/Outline/Interface/Icon.svg') center center/cover no-repeat;
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 28px;
+                left: 0px;
+                top: 0;
+            }
+        }
+    }
+    &__or {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #213252;
+        a {
+            text-decoration: none;
+            color: #213252;
+            font-weight: 600;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        background: #2D72CD;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 18px;
+    }
+    &__privacy {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #5F6369;
+        margin-top: 14px;
+        max-width: 310px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+.no-scroll {
+    overflow-y: hidden;
+}
+

@@ -1,0 +1,100 @@
+.metal {
+    // min-height: 835px;
+    overflow: hidden;
+    border-bottom: 1px solid #AEB6BB;;
+    position: relative;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        height: 775px;
+    }
+    &__img {
+        display: flex;
+        flex-direction: column;
+        margin-top: 21px;
+        img {
+            position: absolute;
+            max-height: 727px;
+            right: -25%;
+            top: 0;
+            z-index: -1;
+        }
+        &-btn {
+            height: 100%;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+    &__text {
+        margin-top: 170px;
+        max-width: 635px;
+        margin-right: auto;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 37px;
+        line-height: 56px;
+        color: #213252;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 36px;
+        color: #213252;
+        margin-top: 41px;
+        max-width: 500px;
+    }
+    &__btn {
+        display: flex;
+        width: 400px;
+        height: 70px;
+        background: #2D72CD;
+        margin-top: 75px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+    }
+    &__900 {
+        img {
+            position: absolute;
+            max-height: 675px;
+            left: 0;
+            top: 140px;
+            z-index: -1;
+        }
+    }
+    &__btn2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        background: #E28519;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 100;
+        right: 9%;
+        bottom: 14%;
+        text-decoration: none;
+        margin-right: 10px;
+        &-text {
+            display: flex;
+            gap: 20px;
+            border: 1px dashed #fff;
+            border-radius: 8px;
+            padding: 18px;
+            color: #fff;
+            &::before {
+                content: '';
+                width: 32px;
+                height: 42px;
+                background: url('../../img/price.svg') center center/cover no-repeat;
+                display: block;
+            }
+        }
+    }
+}
