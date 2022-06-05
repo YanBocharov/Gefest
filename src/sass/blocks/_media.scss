@@ -6,18 +6,50 @@
         }
     }
 }
+@media (max-width: 1230px) {
+    .price {
+        &__wrapper1{
+            grid-template-columns: repeat(6,160px);
+        }
+        &__wrapper2 {
+            grid-template-columns: repeat(2,480px);
+        }
+    }
+}
 @media (max-width: 1120px) {
     .metal {
         &__img {
             img {
-                right: -40%;
+                top: -95px;
             }
         }
         &__wrapper {
-            height: 1000px;
+            height: 570px;
+        }
+        &__text {
+            margin-top: 20px;
         }
         &__btn2 {
-            bottom: 33%;
+            bottom: 10%;
+        }
+    }
+}
+@media (max-width: 1065px) {
+    .catalog {
+        &__img {
+            display: none;
+        }
+        &__btn {
+            &-descr {
+                margin-bottom: 50px;
+            }
+        }
+        &__text {
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__back {
+            max-height: 100%;
         }
     }
 }
@@ -28,6 +60,9 @@
                 right: -55%;
             }
         }
+    }
+    .price {
+        margin-top: 30px;
     }
 }
 @media (max-width: 980px) {
@@ -44,6 +79,69 @@
                 font-size: 13px;
             }
         }
+    }
+}
+@media (max-width: 960px) {
+    .price {
+        &__wrapper1 {
+            grid-template-columns: repeat(6, 135px);
+        }
+        &__wrapper2 {
+            grid-template-columns: repeat(2, 405px);
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+            height: 450px;
+            &-btn {
+                margin: 0 auto;
+                margin-top: 145px;
+                margin-left: 14px;
+            }
+            &-title {
+                font-size: 14px;
+                &_mt45 {
+                    margin-top: 15px;
+                }
+                &_mt22 {
+                    margin-top: 5px;
+                }
+            }
+            ul {
+                line-height: 23px;
+            }
+        }
+        &__text {
+            margin: 0;
+            &-title {
+                margin-left: 35px;
+            }
+            &-subtitle {
+                margin-left: 35px;
+            }
+            &-descr {
+                margin-left: 35px;
+            }
+        }
+    }
+    .mt50px {
+        margin-top: 50px;
+    }
+    .mt170px {
+        margin-top: 160px;
+        margin-left: 40px;
+    }
+    .pl35px {
+        padding-left: 35px;
+    }
+    .mt35px {
+        margin-top: 25px;
+    }
+    .mt145px {
+        margin-top: 145px;
+    }
+    .mt125px {
+        margin-top: 125px;
     }
 }
 @media (max-width: 940px) {
@@ -66,6 +164,7 @@
             &-text {
                 font-size: 13px;
             }
+            
         }
     }
 }
@@ -88,11 +187,15 @@
         &__text {
             margin-top: 20px;
             max-width: 100%;
-            text-align: center;
+        }
+        &__title {
+            margin: 0 10px;
         }
         &__subtitle {
             max-width: 100%;
+            margin: 0 10px;
             margin-top: 20px;
+            
         }
         &__btn {
             margin: 0 auto;
@@ -125,11 +228,49 @@
     .metal {
         &__900 {
             img {
-                margin-top: 100px;
+                margin-top: 150px;
             }
         }
         &__wrapper {
-            height: 995px;
+            height: 1000px;
+        }
+    }
+}
+@media (min-width: 811px) {
+    .price {
+        &__mobile {
+            display: none;
+        }
+    }
+}
+@media (max-width:810px) {
+    .metal {
+        &__title {
+            max-width: 600px;
+            // margin-left: 50px;
+        }
+        &__subtitle {
+            max-width: 600px;
+            // margin-left: 50px;
+        }
+        &__text {
+            margin: 0 auto;
+            // margin-top: 20px;
+        }
+    }
+    .price {
+        &__wrapper1 {
+            display: none;
+        }
+        &__wrapper2 {
+            display: none;
+        }
+    }
+}
+@media (max-width: 748px) {
+    .price {
+        ul {
+            width: 60%;
         }
     }
 }
@@ -164,10 +305,50 @@
         }
     }
 }
+@media (max-width: 624px) {
+    .price {
+        ul {
+            font-size: 17px;
+            line-height: 27px;
+        }
+    }
+}
 @media (max-width: 535px) {
     .metal {
         &__title {
             font-size: 28px;
+        }
+    }
+}
+@media (max-width: 624px) {
+    .price {
+        ul {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 620px) {
+    .catalog {
+        height: 100%;
+        &__wall {
+            display: block;
+        }
+        &__wrapper {
+            margin-top: 15px;
+            grid-template-columns: 100%;
+        }
+        &__input {
+            margin: 0 20px;
+        }
+        &__btn {
+            margin: 0 10px;
+            margin-top: 20px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 35px;
+            margin-top: 25px;
         }
     }
 }
@@ -205,6 +386,19 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .price {
+        &__tab1 {
+            &-text {
+                margin: 0;
+                margin-left: 10px;
+            }
+            &-img {
+                margin-left: 10px;
+            }
+        }
+    }
+}
 @media (max-width: 470px) {
     .header {
         &__item {
@@ -220,6 +414,13 @@
         }
     }
 }
+@media (max-width: 469px) {
+    .price {
+        ul {
+            font-size: 13px;
+        }
+    }
+}
 @media (max-width: 466px) {
     .metal {
         &__title {
@@ -229,6 +430,18 @@
         &__900 {
             img {
                 height: 400px;
+            }
+        }
+    }
+    .price {
+        &__tab1 {
+            &-text {
+                margin: 0;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            &-img {
+                margin-left: 10px;
             }
         }
     }
@@ -272,6 +485,47 @@
         }
     }
 }
+@media (max-width: 427px) {
+    .price {
+        &__tab1 {
+            &-text {
+                margin: 0;
+                margin-left: 10px;
+                font-size: 17px;
+            }
+            &-img {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .price {
+        &__text {
+            &-title {
+                font-size: 35px;
+            }
+            &-subtitle {
+                font-size: 21px;
+            }
+        }
+    }
+}
+@media (max-width: 410px) {
+    .catalog {
+        &__btn {
+            width: 310px;
+        }
+    }
+}
+@media (max-width: 407px) {
+    .price {
+        ul {
+            font-size: 12px;
+            width: 70%;
+        }
+    }
+}
 @media (max-width: 383px) {
     .metal {
         &__title {
@@ -285,6 +539,18 @@
             img {
                 max-height: 375px;
                 margin-top: 80px;
+            }
+        }
+    }
+}
+@media (max-width: 380px) {
+    .price {
+        &__text {
+            &-title {
+                font-size: 30px;
+            }
+            &-subtitle {
+                font-size: 19px;
             }
         }
     }
@@ -313,6 +579,56 @@
         }
     }
 }
+@media (max-width: 345px) {
+    .metal {
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 10px;
+            margin: 10px 10px;
+        }
+        &__subtitle {
+            margin-left: 10px;
+        }
+        &__900 {
+            img {
+                margin-top: 80px;
+            }
+        }
+        &__wrapper {
+            height: 700px;
+        }
+    }
+    .price {
+        &__text {
+            &-title {
+                font-size: 25px;
+                line-height: 38px;
+            }
+        }
+        &__tab1 {
+            &-img {
+                margin-left: 10px;
+            }
+            &-text {
+                font-size: 14px;
+                margin: 0;
+                &::after {
+                    width: 7px;
+                    height: 4px;
+                }
+            }
+        }
+        &__tab2 {
+            ul {
+                line-height: 30px;
+            }
+            &-btn {
+                font-size: 16px;
+            }
+        }
+    }
+}
 @media (max-width: 333px) {
     .header {
         &__item {
@@ -325,6 +641,40 @@
             }
         }
     }
+    .metal {
+        &__title {
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width: 330px) {
+    .catalog {
+        &__text {
+            text-align: left;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            max-width: 224px;
+            margin-left: 25px;
+            margin-top: 48px;
+        }
+        &__descr {
+            margin-left: 24px;
+        }
+        &__btn {
+            width: 280px;
+            height: 50px;
+            margin-left: 25px;
+            &-descr {
+                margin-left: 25px;
+                font-size: 14px;
+            }
+        }
+    }
 }
 @media (max-width: 320px) {
     .metal {
@@ -334,6 +684,7 @@
             line-height: 28px;
             text-align: left;
             color: #213252;
+            margin-left: 10px;
         }
         &__subtitle {
             text-align: left;
@@ -342,6 +693,7 @@
             font-size: 14px;
             line-height: 24px;
             color: #213252;
+            margin-left: 10px;
         }
         &__900 {
             img {
@@ -354,6 +706,60 @@
         }
         &__btn {
             width: 270px;
+        }
+    }
+    .price {
+        &__tab1 {
+            &-text {
+                font-size: 12px;
+                margin-left: 10px;
+                &::after {
+                    width: 7px;
+                    height: 4px;
+                }
+            }
+            &-img {
+                margin-left: 10px;
+            }
+        }
+        &__tab2 {
+            &-img {
+                img {
+                    width: 80%;
+                }
+            }
+            ul {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                margin-left: 45px;
+                width: 88%;
+            }
+            &-btn {
+                width: 220px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+        &__text {
+            &-title {
+                margin: 0 25px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-subtitle {
+                font-size: 12px;
+                line-height: 20px;
+                margin: 0 25px;
+                margin-top: 11px;
+            }
+            &-descr {
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 25px;
+                margin-top: 35px;
+                margin-bottom: 25px;
+            }
         }
     }
 }
