@@ -1,4 +1,5 @@
 .benefit {
+    margin: 0 10px;
     &__title {
         margin-top: 125px;
         font-weight: 600;
@@ -41,6 +42,7 @@
         }
     }
     &__wrapper {
+        margin: 0 10px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 180px;
