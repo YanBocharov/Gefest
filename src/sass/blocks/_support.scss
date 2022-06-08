@@ -22,7 +22,7 @@
     }
     &__block {
         display: grid;
-        grid-template-columns: 192px 182px;
+        grid-template-columns: 192px 200px;
         column-gap: 40px;
         align-items: center;
         img {
@@ -43,29 +43,29 @@
         }
     }
     &__img {
-        display: flex;
-        top: 0;  
-        align-items: flex-end;
-        min-width: 712px;
-        max-height: 580px;
+        width: 90%;
+        // width: 780px;
+        height: 580px;
+        position: relative;
+        display: block;
         img {
             position: absolute;
-            max-width: 720px;
-            max-height: 580px;
             z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         &-descr {
+            position: absolute;
             display: flex;
             align-items: center;
             padding-left: 50px;
-            min-height: 90px;
-            background-color: #211D1D;
             width: 100%;
-            text-align: left;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-            color: #FFFFFF;
+            height: 90px;
+            background-color: #211D1D;
+            color: #fff;
+            bottom: 0;
+
         }
     }
     &__footer {
