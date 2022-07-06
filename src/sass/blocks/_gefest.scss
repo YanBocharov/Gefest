@@ -1,0 +1,117 @@
+.gefest {
+    overflow: hidden;
+    &__wrapper {
+        display: flex;
+
+    }
+    &__img {
+        position: absolute;
+        max-width: 1280px;
+        max-height: 860px;
+        left: -50%;
+        bottom: 0px;
+        z-index: -1;
+        padding-top: 50px;
+    }
+    &__block {
+        position: relative;
+        width: 100%;
+    }
+    &__text {
+        max-width: 712px;
+    }
+    &__wall {
+        margin-top: 50px;
+        background: #1A2C41;
+        border-radius: 4px;
+        margin-bottom: 50px;
+        &-text {
+            color: #fff;
+            padding: 25px 105px;
+            font-size: 16px;
+            line-height: 24px;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        padding: 0 105px 40px 105px;
+    }
+    &__input {
+        width: 310px;
+        height: 60px;
+        padding: 0 10px;
+        border-radius: 4px 0 0 4px;
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__btn {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        width: 187px;
+        height: 60px;
+        background: #2D72CD;
+        border-radius: 0px 4px 4px 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__title {
+        max-width: 575px;
+        margin-left: 105px;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 32px;
+        color: #213252;
+        margin-top: 170px;
+    }
+    &__subtitle {
+        max-width: 613px;
+        margin-left: 100px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #213252;
+        margin-top: 25px;
+        span {
+            font-weight: 700;
+            color: #1C5AAC;
+        }
+    }
+    &__brick {
+        position: absolute;
+        bottom: 40px;
+        max-width: 400px;
+        min-height: 82px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        &-text {
+            margin: 21px 16px;
+            line-height: 20px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #213252;
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #213252;
+        }
+    }
+}

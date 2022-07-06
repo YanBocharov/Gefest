@@ -6,6 +6,26 @@
         }
     }
 }
+@media (max-width: 1250px) {
+    .gost {
+        &__wall {
+            grid-template-columns: repeat(3,auto);
+            align-items: center;
+            text-align: center;
+            // margin: 0 auto;
+        }
+        &__title {
+            margin: 0 25px;
+        }
+        &__subtitle {
+            margin: 0 25px;
+            margin-top: 25px;
+        }
+    }
+    .myImg {
+        margin: 0 auto;
+    }
+}
 @media (max-width: 1240px) {
     .support {
         &__wall {
@@ -45,6 +65,15 @@
         }
     }
 }
+@media (max-width: 1200px) {
+    .modal-content {
+        width: 70%;
+        max-width: 500px;
+    }
+    .modal {
+        z-index: 523532;
+    }
+}
 @media (min-width: 1160px) {
     .w1160 {
         display: none;
@@ -81,6 +110,16 @@
         justify-content: center;
     }
 }
+@media (max-width: 1156px) {
+    .gefest {
+        &__img {
+            max-width: 1080px;
+        }
+        &__title {
+            margin-top: 50px;
+        }
+    }
+}
 @media (max-width: 1120px) {
     .metal {
         &__img {
@@ -96,6 +135,30 @@
         }
         &__btn2 {
             bottom: 10%;
+        }
+    }
+}
+@media (max-width: 1110px) {
+    .gefest {
+        &__title {
+            max-width: 510px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        &__subtitle {
+            max-width: 510px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        &__wall {
+            margin-right: 10px;
+            &-text {
+                padding: 25px 50px;
+                font-size: 15px;
+            }
+        }
+        &__form {
+            padding: 0 40px 40px 40px;
         }
     }
 }
@@ -131,6 +194,13 @@
         }
     }
 }
+@media (max-width: 1020px) {
+    .gefest {
+        &__img {
+            max-width: 980px;
+        }
+    }
+}
 @media (max-width: 1000px) {
     .metal {
         &__img {
@@ -156,6 +226,19 @@
             &-text {
                 font-size: 13px;
             }
+        }
+    }
+}
+@media (max-width: 970px) {
+    .gefest {
+        &__img {
+            max-width: 880px;
+        }
+        &__subtitle {
+            margin-top: 15px;
+        }
+        &__wall {
+            margin-top: 30px;
         }
     }
 }
@@ -249,6 +332,14 @@
         &__wall {
             flex-direction: column;
             align-items: center;
+        }
+    }
+}
+@media (max-width: 930px) {
+    .gost {
+        &__wall {
+            grid-template-columns: repeat(2,auto);
+            gap: 60px;
         }
     }
 }
@@ -355,6 +446,15 @@
         }
         &__subtitle{
             font-size: 20px;
+        }
+    }
+}
+@media (max-width: 860px) {
+    .partner {
+        &__bg {
+            img {
+                display: none;
+            }
         }
     }
 }
@@ -467,6 +567,16 @@
             text-align: center;
         }
     }
+    .gost {
+        &__wall {
+            gap: 30px;
+        }
+    }
+}
+@media (min-width: 661px) {
+    .slider {
+        display: none;
+    }
 }
 @media (max-width: 660px) {
     .header {
@@ -484,6 +594,21 @@
         &__wrapper {
             height: 900px;
         }
+    }
+    .gost {
+        &__wall {
+            display: none;
+        }
+        &__title {
+            font-size: 22px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
+    .slider {
+        margin-top: 55px;
+        display: block;
     }
 }
 @media (max-width: 657px) {
@@ -809,6 +934,11 @@
             }
         }
     }
+    .gost {
+        &__title {
+            line-height: 35px;
+        }
+    }
 }
 @media (max-width: 433px) {
     .metal {
@@ -1063,6 +1193,23 @@
         }
     }
 }
+@media (max-width: 337px) {
+    .gost {
+        &__title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 15px;
+        }
+        &__subtitle {
+            margin: 0 15px;
+            margin-top: 25px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
 @media (max-width: 333px) {
     .header {
         &__item {
@@ -1104,7 +1251,7 @@
             height: 50px;
             margin-left: 25px;
             &-descr {
-                margin-left: 25px;
+                margin: 20px 10px 40px 10px;
                 font-size: 14px;
             }
         }

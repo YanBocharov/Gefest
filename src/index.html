@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
     <title>Gefest</title>
 </head>
@@ -493,7 +495,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="gost">
+    <section class="gost">
         <div class="container">
             <div class="gost__title">Производимая продукция соответствует регламентам ГОСТ, ОСТ, ТУ и международным стандартам</div>
             <div class="gost__subtitle">Вся металлопродукция проходит заводские испытания.</div>
@@ -503,40 +505,63 @@
                 <img width="300" height="415" class="myImg myImg3" src="img/gost/Rectangle 32.png" alt="ThirdSertitficate">
                 <img width="300" height="415" class="myImg myImg4" src="img/gost/Rectangle 51.png" alt="FourthSertitficate">
             </div>
+            <div class="slider">
+                <div>
+                    <img width="300" height="415" class="myImg myImg1" src="img/gost/Rectangle 30.png" alt="FirstSertitficate">
+                </div>
+                <div>
+                    <img width="300" height="415" class="myImg myImg2" src="img/gost/Rectangle 31.png" alt="SecondSertitficate">
+                </div>
+                <div>
+                    <img width="300" height="415" class="myImg myImg3" src="img/gost/Rectangle 32.png" alt="ThirdSertitficate">
+                </div>
+                <div>
+                    <img width="300" height="415" class="myImg myImg4" src="img/gost/Rectangle 51.png" alt="FourthSertitficate">
+                </div>
+            </div>
         </div>
     </section>
-    <section class="partner">
+    <section class="gefest">
         <div class="container">
-            <div class="partner__wrapper">
-                <div class="partner__bg">
-                    <img src="img/image 25.png" alt="partner_bg" class="partner__img">
-                    <div class="partner__bg_descr">
-                        <div class="partner__bg_title">Иванов Иван Эдуардович</div>
-                        <div class="partner__bg_subtitle">генеральный директор компании ТПК ГЕФЕСТ</div>
+            <div class="gefest__wrapper">
+                <div class="gefest__block">
+                    <img class="gefest__img" src="img/partner_bg.png" alt="partner">
+                    <div class="gefest__brick">
+                        <div class="gefest__brick-text">
+                            <div class="gefest__brick-title">
+                                Иванов Иван Эдуардович
+                            </div>
+                            <div class="gefest__brick-subtitle">
+                                генеральный директор компании ТПК ГЕФЕСТ
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="partner__text">
-                    <div class="partner__title">Сделайте первый заказ — и мы станем для вас <br> не просто очередным поставщиком, <br> а партнером, предлагающим лучшие условия <br> по постаке металлопроката</div>
-                    <div class="partner__subtitle">В 2014 году мы создали компанию и поставили цель стать крупнейшим поставщиком металлопроката в РФ и СНГ. Наш приоритет — предлагать клиентам лучший продукт по качеству и логистике.
+                <div class="gefest__text">
+                    <div class="gefest__title">
+                        Сделайте первый заказ — и мы станем для вас не просто очередным поставщиком, а партнером, предлагающим лучшие условия по постаке металлопроката
                     </div>
-                    <div class="partner__descr">Я понимаю, что сейчас на рынке очень много предложений, и трудно выбрать надежного партнера. Мы искренне заинтересованы в том, чтобы <span>решить любую задачу вашей компании и предложить лучшие условия сотрудничества.</span>
+                    <div class="gefest__subtitle">
+                        В 2014 году мы создали компанию и поставили цель стать крупнейшим поставщиком металлопроката в РФ и СНГ. Наш приоритет — предлагать клиентам лучший продукт по качеству и логистике.
                     </div>
-                    <div class="partner__block">
-                        <div class="partner__block-descr">
-                            <span>Давайте обсудим ваш заказ прямо сейчас</span> <br> Оставьте свой номер, мы свяжемся с вами, ответим на любые вопросы и расскажем больше о наших возможностях, назовем сроки и цену исполнения вашего заказа.
+                    <div class="gefest__subtitle">
+                        Я понимаю, что сейчас на рынке очень много предложений, и трудно выбрать надежного партнера. Мы искренне заинтересованы в том, чтобы <span>решить любую задачу вашей компании и предложить лучшие условия сотрудничества.</span>
+                    </div>
+                    <div class="gefest__wall">
+                        <div class="gefest__wall-text">
+                            <span>Давайте обсудим ваш заказ прямо сейчас</span> <br>
+                            Оставьте свой номер, мы свяжемся с вами, ответим на любые вопросы и расскажем больше о наших возможностях, назовем сроки и цену исполнения вашего заказа.
                         </div>
-                        <div class="partner__wall">
-                            <form action="#" class="partner__form">
-                                <input placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" name="number" id="number3" type="number">
-                            </form>
-                            <a href="#" class="partner__btn">Обсудить заказ</a>
-                        </div>
+                        <form action="#" class="gefest__form">
+                            <input class="gefest__input" type="number" name="number" placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _">
+                            <a href="#" class="gefest__btn">Обсудить заказ</a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wall">
                 <a href="#" class="footer__logo"><img src="img/GEFEST.svg" alt="">
@@ -582,7 +607,7 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div id="popup" class="popup">
         <a href="#" class="popup__area"></a>
         <div class="popup__body">
@@ -633,8 +658,9 @@
         <span class="close" onclick="document.getElementById('myModal').style.display = 'none'">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
-    </div> -->
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

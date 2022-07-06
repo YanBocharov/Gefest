@@ -44,33 +44,18 @@ window.addEventListener('DOMContentLoaded', function() {
 
     //--------------------------------ImgZoom----------------------------------------
     let modal = document.getElementById('myModal');
-    let img1 = document.querySelector('.myImg1');
-    let img2 = document.querySelector('.myImg2');
-    let img3 = document.querySelector('.myImg3');
-    let img4 = document.querySelector('.myImg4');
     let modalImg = document.getElementById('img01');
     let captionText = document.getElementById('caption');
+    let allImg = document.querySelectorAll('.myImg');
+    
+    for(let i of allImg) {
+        i.onclick = function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        };
+    }
 
-    img1.onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    };
-    img2.onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    };
-    img3.onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    };
-    img4.onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    };
 
     let span = document.getElementsByClassName('close')[0];
     span.onclick = function() {
@@ -102,5 +87,15 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
     popupAreaBackground();
-    //--------------------------------------Input-----------------------------------------
+    //--------------------------------------GostCarousel-----------------------------------------
+
+    $('.slider').slick({
+        responsive: [{
+            breakpoint: 371,
+            settings: {
+                dots: true,
+                arrows: false
+            }
+        }]
+    });
 });
