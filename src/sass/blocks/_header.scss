@@ -1,6 +1,8 @@
 .header {
     min-height: 100px;
+    border-bottom: 1px solid #AEB6BB;
     &__wrapper {
+        margin: 0 10px;
         display: grid;
         grid-template-columns: 200px 400px 250px auto;
         align-items: center;
