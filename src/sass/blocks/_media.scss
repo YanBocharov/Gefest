@@ -25,6 +25,20 @@
     .myImg {
         margin: 0 auto;
     }
+    .popup {
+        &__content {
+            min-width: 1030px;
+        }
+        &__img {
+            img {
+                top: -54px;
+                left: 0;
+            }
+        }
+        &__wall {
+            right: 100px;
+        }
+    }
 }
 @media (max-width: 1240px) {
     .support {
@@ -210,6 +224,26 @@
         }
     }
 }
+@media (max-width: 1030px) {
+    .popup {
+        &__content {
+            min-width: 730px;
+        }
+        &__img {
+            img {
+                display: none;
+            }
+        }
+        &__wall {
+            right: 50%;
+            transform: translateX(50%);
+            top: 25px;
+        }
+        &__title {
+            font-size: 21px;
+        }
+    }
+}
 @media (max-width: 1020px) {
     .gefest {
         &__img {
@@ -360,7 +394,8 @@
             justify-content: center;
             align-items: center;
             column-gap: 150px;
-            row-gap: 0px;
+            row-gap: 15px;
+            margin-bottom: 20px;
         }
         &__item {
             display: flex;
@@ -694,6 +729,23 @@
         }
     }
 }
+@media (max-width: 730px) {
+    .popup {
+        &__content {
+            min-width: 550px;
+            min-height: 710px;
+        }
+        &__title {
+            display: none;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__wall {
+            top: 45px;
+        }
+    }
+}
 @media (max-width: 722px) {
     .support {
         &__title {
@@ -901,6 +953,13 @@
         }
     }
 }
+@media (max-width: 570px) {
+    .popup {
+        &__content {
+            min-width: 450px;
+        }
+    }
+}
 @media (max-width: 562px) {
     .footer {
         &__second {
@@ -1079,6 +1138,15 @@
             img {
                 height: 26px;
             }
+        }
+    }
+    .popup {
+        &__content {
+            min-width: 350px;
+            min-height: 680px;
+        }
+        &__block {
+            margin-top: 5px;
         }
     }
 }
@@ -1486,6 +1554,26 @@
     .footer {
         &__btn {
             font-size: 12px;
+        }
+    }
+    .popup {
+        &__content {
+            min-width: 305px;
+        }
+        &__wall {
+            max-width: 100%;
+            top: 15px;
+        }
+        &__input {
+            input {
+                width: 250px;
+            }
+            label {
+                font-size: 14px;
+            }
+        }
+        &__block {
+            margin-top: 0px;
         }
     }
 }
