@@ -56,11 +56,15 @@ window.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-
     let span = document.getElementsByClassName('close')[0];
     span.onclick = function() {
         modal.style.display = 'none';
     };
+    let modalWrapper = document.getElementById('modal-wrapper');
+        modalWrapper.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = 'none';
+        };
     //---------------------------------------POPUP------------------------------------------
     let closePopup = document.querySelector('.popup__close'),
         popupArea = document.querySelector('.popup__area');

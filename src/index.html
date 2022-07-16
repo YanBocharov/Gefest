@@ -267,7 +267,7 @@
                         <li>Оцинкованная стальная лента</li>
                         <li>Оцинкованная полоса Г/К</li>
                     </ul>
-                    <a href="#" class="price__tab2-btn">
+                    <a href="#" class="price__tab2-btn open-popup">
                         Узнать стоимость
                     </a>
                 </div>
@@ -697,8 +697,11 @@
                                 <label for="email">Куда отправить прайс и каталог?</label>
                             </div>
                         </form>
-                        <div class="popup__add">
-                            <a href="#">Прикрепите файлы <br> (заказ,спецификацию, смету, если есть)</a>
+                        <div class="project__add">
+                            <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                            <label for="input__file" class="input__file-button"></label>
+                            <span class="input__file-icon-wrapper"><img class="input__file-icon" src="img/Outline/Interface/Attach.svg" alt="Выбрать файл" width="25"></span>
+                            <span class="input__file-button-text">Прикрепите файлы<br>(заказ,спецификацию, смету, если есть)</span>
                         </div>
                         <div class="popup__or">
                             Или напишите нам на почту <a href="#">info@tpk-gefest.ru</a>
@@ -718,6 +721,7 @@
         <span class="close" onclick="document.getElementById('myModal').style.display = 'none'">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
+        <a href="#" id="modal-wrapper"></a>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
