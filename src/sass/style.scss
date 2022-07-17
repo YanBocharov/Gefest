@@ -56,6 +56,13 @@
 .show {
     display: grid;
 }
+.showTab {
+    display: flex;
+    position: relative;
+}
+.hideTab {
+    display: none;
+}
 .wrgbbrbr {
     width: 200px;
     height: 200px;

@@ -42,6 +42,25 @@ window.addEventListener('DOMContentLoaded', function() {
           .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+    // -------------------- MobileTabs
+
+    let mobileTabs = document.querySelectorAll('.price__tab1');
+    function showMobileTabs (a) {
+        if (mobileTabs[a].classList.contains('hideTab')) {
+            mobileTabs[a].classList.remove('hideTab');
+            mobileTabs[a].classList.add('showTab');
+        }
+    }
+    mobileTabs.addEventListener('click', function (event) {
+        let target = event.target;
+        event.preventDefault();
+        if (target && target.classList.contains('hideTab')) {
+            for (let i = 0; i < mobileTabs.length; i++) {
+                
+            }
+        }
+    });
+
     //--------------------------------ImgZoom----------------------------------------
     let modal = document.getElementById('myModal');
     let modalImg = document.getElementById('img01');
