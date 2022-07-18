@@ -145,6 +145,27 @@
         position: relative;
         width: 80%;
         margin: 0 auto;
+        &-tab {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            border: 1px solid #B0B2B7;
+            border-bottom: 0px solid #000;
+            img {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+            }
+        }
+    }
+    #check-menu {
+        display: none;
     }
     &__tab1 {
         cursor: pointer;
